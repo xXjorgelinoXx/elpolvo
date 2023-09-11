@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polvo Ambiental</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 0 1em;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 1.2em;
+        }
+        .survey {
+            background-color: #000;
+            color: white;
+            padding: 1em;
+            border-radius: 5px;
+            margin: 0 auto; /* Centra horizontalmente el formulario */
+            max-width: 400px;
+            margin-bottom: 20px; /* Agrega espacio entre el formulario y el copyright */
+        }
+        .survey h2 {
+            color: #fff;
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        .survey label {
+            display: block;
+            margin-top: 1em;
+            font-size: 1.2em;
+        }
+        .survey input[type="number"],
+        .survey select,
+        .survey textarea {
+            width: 100%;
+            padding: 0.3em;
+            font-size: 0.9em;
+            background-color: transparent;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .survey input[type="radio"] {
+            /* Utiliza display: inline-block para alinear los botones "Sí" y "No" horizontalmente */
+            display: inline-block;
+            margin-right: 0.5em;
+        }
+        .survey textarea {
+            resize: vertical;
+        }
+        .survey input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: block; /* Cambia la visualización a bloque para centrar */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Polvo Ambiental</h1>
+    </header>
+    <div class="container">
+        <h2>¿Qué es el Polvo Ambiental?</h2>
+        <p>El polvo ambiental es una mezcla de partículas sólidas y líquidas suspendidas en el aire. Estas partículas pueden incluir polvo mineral, polen, esporas de hongos, cenizas volcánicas y otros contaminantes.</p>
+
+        <p>El polvo ambiental es una preocupación común en áreas urbanas e industriales, donde la actividad humana puede generar partículas finas y ultrafinas que pueden afectar la salud y el medio ambiente. También puede ser transportado a largas distancias por el viento.</p>
+
+        <p>La exposición crónica al polvo ambiental puede tener efectos perjudiciales en la salud respiratoria, especialmente en personas con condiciones preexistentes como el asma. Además, el polvo puede contribuir a la contaminación del aire y afectar la visibilidad.</p>
+
+        <h2>Efectos del Polvo Ambiental</h2>
+        <p>El polvo ambiental puede tener efectos negativos en la salud humana, especialmente en personas con condiciones respiratorias preexistentes. También puede contribuir a la contaminación del aire y afectar la calidad del aire interior y exterior.</p>
+
+        <h2>Prevención y Control</h2>
+        <p>Para reducir la exposición al polvo ambiental, es importante mantener limpios los espacios interiores, utilizar purificadores de aire y seguir las recomendaciones de salud pública en días con alta concentración de polvo.</p>
+    </div>
+    <div class="survey">
+        <h2>Encuesta sobre Polvo Ambiental</h2>
+        <form>
+            <label for="edad">1. Edad:</label>
+            <input type="number" id="edad" name="edad"><br>
+
+            <label for="genero">2. Género:</label>
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select><br>
+
+            <label for="exposicion">3. ¿Has experimentado problemas de salud debido a la exposición al polvo ambiental?</label><br>
+            <!-- Utiliza span para agrupar los botones de radio "Sí" y "No" -->
+            <span>
+                <input type="radio" id="si" name="exposicion" value="si">
+                <label for="si">Sí</label>
+            </span>
+            <span>
+                <input type="radio" id="no" name="exposicion" value="no">
+                <label for="no">No</label>
+            </span><br>
+
+            <label for="comentarios">4. Comentarios adicionales:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
+    <footer>
+        &copy; 2023 El Polvo. By Jorge Cardenas
+    </footer>
+</body>
+</html>
